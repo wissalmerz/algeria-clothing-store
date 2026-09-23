@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7eee9" />
+    <title>Nouba — Maison de mode algérienne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="intro" id="intro" aria-label="Introduction Nouba">
+      <div class="intro-noise"></div>
+      <p class="intro-kicker">Maison de mode algérienne</p>
+      <div class="bow-stage" id="bowStage" role="button" tabindex="0" aria-label="Ouvrir Nouba">
+        <div class="bow bow-left"><span></span></div>
+        <div class="bow bow-right"><span></span></div>
+        <div class="bow-knot"></div>
+        <div class="bow-shadow"></div>
+      </div>
+      <p class="intro-hint"><span></span> Cliquez pour découvrir la collection <span></span></p>
+      <p class="intro-brand">N<span>O</span>UBA</p>
+    </div>
+
+    <main class="site-shell" id="storefront">
+      <div class="announcement">Livraison offerte dès 18 000 DA <span>✦</span> Paiement à la livraison partout en Algérie</div>
+      <header class="site-header">
+        <a class="wordmark" href="#top" aria-label="Nouba accueil">NOUBA<small>ALGERIA</small></a>
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="#collection">Collection</a>
+          <a href="#essentiels">Essentiels</a>
+          <a href="#lookbook">Lookbook</a>
+          <a href="#story">Notre histoire</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button search-toggle" aria-label="Rechercher">⌕</button>
+          <button class="cart-button" id="cartButton" aria-label="Ouvrir le panier">Panier <b id="cartCount">0</b></button>
+          <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+        </div>
+      </header>
+
+      <div class="search-panel" id="searchPanel">
+        <input id="searchInput" type="search" placeholder="Rechercher une pièce..." aria-label="Rechercher une pièce" />
+        <button class="search-close" aria-label="Fermer la recherche">×</button>
+      </div>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Collection automne / hiver 2024</p>
+          <h1>Le geste<br /><em>qui reste.</em></h1>
+          <p class="hero-text">Des silhouettes pensées à Alger, façonnées pour celles qui avancent avec grâce.</p>
+          <a class="button button-dark" href="#collection">Découvrir la collection <span>↗</span></a>
+        </div>
+        <div class="hero-art">
+          <div class="hero-orb"></div>
+          <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1100&q=85" alt="Silhouette en robe rose poudré" />
+          </div>
+          <p class="hero-stamp">Made<br />in<br />Algeria</p>
+          <p class="hero-caption">01 — Le commencement</p>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Valeurs Nouba">
+        <div>Conçu à Alger <span>✦</span> Expédié avec soin <span>✦</span> Fait pour durer <span>✦</span> Conçu à Alger <span>✦</span> Expédié avec soin <span>✦</span></div>
+      </section>
+
+      <section class="section collection-section" id="collection">
+        <div class="section-heading">
+          <div><p class="eyebrow">La sélection Nouba</p><h2>Pièces <em>signature</em></h2></div>
+          <p class="section-intro">Une garde-robe sensible, entre lignes contemporaines et détails inspirés de nos héritages.</p>
+        </div>
+        <div class="category-tabs" id="categoryTabs">
+          <button class="active" data-category="Tous">Tout voir</button>
+          <button data-category="Robes">Robes</button>
+          <button data-category="Ensembles">Ensembles</button>
+          <button data-category="Manteaux">Manteaux</button>
+          <button data-category="Accessoires">Accessoires</button>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="editorial" id="lookbook">
+        <div class="editorial-image"><img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=1200&q=85" alt="Lookbook Nouba, veste texturée" /></div>
+        <div class="editorial-copy"><p class="eyebrow">Le lookbook</p><h2>Habiter<br /><em>le moment.</em></h2><p>Des matières qui racontent quelque chose. Des coupes qui laissent de la place à votre histoire.</p><a class="text-link" href="#essentiels">Voir le lookbook <span>↗</span></a></div>
+      </section>
+
+      <section class="section essentials-section" id="essentiels">
+        <div class="section-heading"><div><p class="eyebrow">Pour tous les jours</p><h2>Les <em>essentiels</em></h2></div><p class="section-intro">Les pièces que l'on porte, reporte et transmet.</p></div>
+        <div class="essentials-grid">
+          <a href="#collection" class="essential-card"><img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=900&q=80" alt="Chemise blanche structurée" /><span>Les chemises <b>↗</b></span></a>
+          <a href="#collection" class="essential-card"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80" alt="Robe fluide beige" /><span>Les robes <b>↗</b></span></a>
+          <a href="#collection" class="essential-card"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Accessoires dorés" /><span>Les détails <b>↗</b></span></a>
+        </div>
+      </section>
+
+      <section class="story" id="story">
+        <div class="story-mark">N</div>
+        <div><p class="eyebrow">Notre histoire</p><h2>Une mode qui<br /><em>nous ressemble.</em></h2><p>Nouba est née entre deux rives, avec l'envie de créer des vêtements qui célèbrent la douceur, la force et la beauté singulière des femmes algériennes.</p><a class="text-link" href="https://wa.me/213555000000" target="_blank" rel="noreferrer">Parler avec nous <span>↗</span></a></div>
+      </section>
+
+      <footer class="site-footer">
+        <div><a class="wordmark" href="#top">NOUBA<small>ALGERIA</small></a><p>Fait avec intention à Alger.</p></div>
+        <div class="footer-links"><a href="#collection">Boutique</a><a href="#lookbook">Lookbook</a><a href="#story">À propos</a><a href="mailto:bonjour@nouba.dz">Contact</a></div>
+        <div class="footer-note">© 2024 Nouba<br />Tous droits réservés.</div>
+      </footer>
+    </main>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Votre panier" aria-hidden="true">
+      <div class="drawer-header"><div><p class="eyebrow">Votre sélection</p><h2>Le panier <span id="drawerCount">(0)</span></h2></div><button class="close-drawer" id="closeCart" aria-label="Fermer le panier">×</button></div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-empty" id="cartEmpty"><span>♡</span><p>Votre panier est encore vide.</p><a href="#collection" id="emptyLink">Découvrir les pièces</a></div>
+      <div class="cart-footer" id="cartFooter">
+        <div class="delivery-box"><label for="wilayaSelect">Livraison en</label><select id="wilayaSelect"><option value="">Choisir votre wilaya</option></select><small id="deliveryMessage">Sélectionnez votre wilaya pour calculer la livraison.</small></div>
+        <div class="total-row"><span>Sous-total</span><strong id="subtotal">0 DA</strong></div>
+        <div class="total-row"><span>Livraison</span><strong id="shipping">—</strong></div>
+        <div class="total-row total"><span>Total</span><strong id="total">0 DA</strong></div>
+        <button class="button whatsapp-button" id="whatsappButton" disabled>Commander sur WhatsApp <span>↗</span></button>
+        <p class="secure-note">Paiement à la livraison · Commande confirmée par WhatsApp</p>
+      </div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
